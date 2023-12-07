@@ -173,12 +173,9 @@ class Instagram(TorManager,Browser):
 				def main():
 					# assign arugments
 					args = argparse.ArgumentParser()
-					args.add_argument('username',help='Email or username')
-					args.add_argument('wordlist',help='wordlist')
+nadiarans					args.add_argument('wordlist',help='wordlist')
 					args =  args.parse_args()
-
-					# assign variables
-					engine = Instagram(args.username,args.wordlist)
+⁵					engine = Instagram(args.username,args.wordlist)
 
 					# does tor exists?
 					if not os.path.exists('/usr/bin/tor'):
